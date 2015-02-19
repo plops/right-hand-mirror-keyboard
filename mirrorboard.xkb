@@ -93,8 +93,8 @@ xkb_keycodes  { include "evdev+aliases(qwerty)" };
     key <AD08> {	[	  i,	I,	e,	E		]	};
     key <AD09> {	[	  o,	O,	w,	W		]	};
     key <AD10> {	[	  p,	P,	q,	Q		]	};
-    key <AD11> {	[ parenleft,	braceleft	]	};
-    key <AD12> {	[ parenright,	braceright	]	};
+    key <AD11> {	[ parenleft,	braceleft, bracketleft	]	};
+    key <AD12> {	[ parenright,	braceright, bracketright	]	};
 
     key <AC01> {	[	  a,	A,	apostrophe,	quotedbl	]	};
     key <AC02> {	[	  s,	S,	l,	L		]	};
@@ -115,8 +115,8 @@ xkb_keycodes  { include "evdev+aliases(qwerty)" };
     key <AB05> {	[	  b,	B,	b,	B		]	};
     key <AB06> {	[	  n,	N,	v,	V		]	};
     key <AB07> {	[	  m,	M,	c,	C		]	};
-    key <AB08> {	[     comma,	less		]	};
-    key <AB09> {	[    period,	greater		]	};
+    key <AB08> {	[     comma,	less, x, X		]	};
+    key <AB09> {	[    period,	greater, z, Z		]	};
     key <AB10> {	[     slash,	question	]	};
 
 
