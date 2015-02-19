@@ -63,6 +63,7 @@ xkb_keycodes  { include "evdev+aliases(qwerty)" };
   xkb_symbols   {
     include "pc+us+inet(evdev)"
     key <I166> {        [ Tab                  ]       };
+    key <RWIN> {        [ Tab                  ]       };
 
 // Here's the line to make capslock into the modifier key.
     key <MENU> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
@@ -115,8 +116,8 @@ xkb_keycodes  { include "evdev+aliases(qwerty)" };
     key <AB05> {	[	  b,	B,	b,	B		]	};
     key <AB06> {	[	  n,	N,	v,	V		]	};
     key <AB07> {	[	  m,	M,	c,	C		]	};
-    key <AB08> {	[     comma,	less, x, X		]	};
-    key <AB09> {	[    period,	greater, z, Z		]	};
+    key <AB08> {	[      x, X,comma,	less		]	};
+    key <AB09> {	[    z, Z,period,	greater		]	};
     key <AB10> {	[     slash,	question	]	};
 
 
