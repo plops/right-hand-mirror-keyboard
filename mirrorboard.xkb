@@ -62,7 +62,7 @@ xkb_keycodes  { include "evdev+aliases(qwerty)" };
   xkb_compat    { include "complete"      };
   xkb_symbols   {
     include "pc+us+inet(evdev)"
-    //key <MENU> {        [ Menu                  ]       };
+    key <I166> {        [ Tab                  ]       };
 
 // Here's the line to make capslock into the modifier key.
     key <MENU> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
