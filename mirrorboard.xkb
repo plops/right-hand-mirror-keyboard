@@ -58,6 +58,7 @@
 xkb_keymap {
 // use setxkbmap -print -verbose 10 ;; to figure the settings out
 // xkbprint -ll 2 mirrorboard.xkm ;; to make a ps
+//xkbcomp mirrorboard.xkb :0
 xkb_keycodes  { include "evdev+aliases(qwerty)" };
   xkb_types     { include "complete"      };
   xkb_compat    { include "complete"      };
@@ -102,7 +103,7 @@ key <INS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] }
     key <AD09> {	[	  o,	O,	w,	W		]	};
     key <AD10> {	[	  p,	P,	q,	Q		]	};
     key <AD11> {	[ parenleft,	bracketleft, bracetleft	]	};
-    key <AD12> {	[ parenright,	bracketight, bracetright	]	};
+    key <AD12> {	[ parenright,	bracketright, bracetright	]	};
 
     key <AC01> {	[	  a,	A,	apostrophe,	quotedbl	]	};
     key <AC02> {	[	  s,	S,	l,	L		]	};
@@ -143,11 +144,13 @@ key <INS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] }
     key <AE06> {	[	  6,	asciicircum	]	};
     key <AE07> {	[	  7,	ampersand	]	};
     key <AE08> {	[	  8,	asterisk	]	};
-    key <AE09> {	[	  9,	bracketleft	]	};
-    key <AE10> {	[	  0,	bracketright	]	};
-    key <AE11> {	[     minus,	underscore	]	};
-    key <AE12> {	[     equal,	plus		]	};
+    key <AE09> {	[	  9,	-	]	};
+    key <AE10> {	[	  0,	equal	]	};
+//    key <AE11> {	[     minus,	underscore	]	};
+    key <AE11> {	[     period,	underscore	]	};
 
+//    key <AE12> {	[     equal,	plus		]	};
+      key <AE12> {	[     comma,	equal	]	};
 
 
 
