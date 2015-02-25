@@ -144,11 +144,10 @@ key <INS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] }
     key <AE06> {	[	  6,	asciicircum	]	};
     key <AE07> {	[	  7,	ampersand	]	};
     key <AE08> {	[	  8,	asterisk	]	};
-    key <AE09> {	[	  9,	-	]	};
+    key <AE09> {	[	  9,	minus	]	};
     key <AE10> {	[	  0,	equal	]	};
 //    key <AE11> {	[     minus,	underscore	]	};
     key <AE11> {	[     period,	underscore	]	};
-
 //    key <AE12> {	[     equal,	plus		]	};
       key <AE12> {	[     comma,	equal	]	};
 
