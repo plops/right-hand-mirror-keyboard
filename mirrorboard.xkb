@@ -102,8 +102,8 @@ key <INS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] }
     key <AD08> {	[	  i,	I,	e,	E		]	};
     key <AD09> {	[	  o,	O,	w,	W		]	};
     key <AD10> {	[	  p,	P,	q,	Q		]	};
-    key <AD11> {	[ parenleft,	bracketleft, bracetleft	]	};
-    key <AD12> {	[ parenright,	bracketright, bracetright	]	};
+    key <AD11> {	[ parenleft,	bracketleft, braceleft	]	};
+    key <AD12> {	[ parenright,	bracketright, braceright	]	};
 
     key <AC01> {	[	  a,	A,	apostrophe,	quotedbl	]	};
     key <AC02> {	[	  s,	S,	l,	L		]	};
