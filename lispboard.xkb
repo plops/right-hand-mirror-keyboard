@@ -1,0 +1,68 @@
+
+
+
+xkb_keymap {
+// use setxkbmap -print -verbose 10 ;; to figure the settings out
+// xkbprint -ll 2 mirrorboard.xkm ;; to make a ps
+//xkbcomp mirrorboard.xkb :0
+xkb_keycodes  { include "evdev+aliases(qwerty)" };
+  xkb_types     { include "complete"      };
+  xkb_compat    { include "complete"      };
+  xkb_symbols   {
+    include "pc+us+inet(evdev)"
+    key <I166> {        [ Tab                  ]       }; // lenovo left page
+    key <RWIN> {        [ Tab                  ]       };
+
+
+
+
+// Here's the line to make capslock into the modifier key.
+    key <MENU> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
+        key <CAPS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
+key <INS> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
+
+//http://www.charvolant.org/~doug/xkb/html/node5.htmlq
+// caps-space is return
+    key <SPCE> { [ space, space, Return ] };
+
+// If you want the keyboard to be exactly the same as your
+// old one when not using caps, swap the order here -- you
+// can decide if you want tilde or caps-tilde to be backspace.
+
+// Keeps keyboard normal, caps-tilde is backspace:
+    key <TLDE> {	[     asciitilde,	grave,	BackSpace	]	};
+// Version I use -- tilde is backspace:
+//    key <TLDE> {	[     BackSpace,	asciitilde,	grave,	asciitilde};
+
+// The important alpha mappings.  I replaced semicolon with apostrophe
+// because I type the latter much more often, and there's only room for
+// one of them on the left side of the keyboard.
+
+    key <AD11> {	[ parenleft,	bracketleft, braceleft	]	};
+    key <AD12> {	[ parenright,	bracketright, braceright	]	};
+
+
+
+// +/- is not consistent, but there's not room on the keyboard to do it properly.
+
+// Some of these mappings may be nonintuitive.
+// You should adjust them if they are incompatible with your brainware.
+
+
+
+
+  // key <HOME> {        [  Home                 ]       };
+  //   key <PGUP> {        [  Prior                ]       };
+  //   key <DELE> {        [  Delete               ]       };
+  //   key  <END> {        [  End                  ]       };
+  //   key <PGDN> {        [  Next                 ]       };
+
+  //   key   <UP> {        [  Up                   ]       };
+  //   key <LEFT> {        [  Left                 ]       };
+  //   key <DOWN> {        [  Down                 ]       };
+  //   key <RGHT> {        [  Right                ]       };
+
+
+  };
+  xkb_geometry  { include "pc(pc104)"     };
+};
